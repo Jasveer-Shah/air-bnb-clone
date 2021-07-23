@@ -1,0 +1,24 @@
+.banner {
+    background: url('https://a0.muscache.com/im/pictures/258b129d-d1cd-48b5-86d4-86206c13ebf7.jpg?im_w=2560')center center;
+    position: relative;
+    height: 60vh;
+}
+.banner-info {
+  
+    background-color: black;
+    color: white;
+    padding: 10% 50px 40px 50px;
+    width: 25%;
+}
+
+.banner-info  > button {
+    background-color: #ff7779;
+    color: white;
+    text-transform: inherit;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.banner-info  > h5 {
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
