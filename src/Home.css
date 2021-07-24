@@ -1,4 +1,17 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
 .home-section {
     display: flex;
     padding: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+    .home-section {
+        display: flex;
+        padding: 10px;
+    }
+    
+  }

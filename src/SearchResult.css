@@ -3,9 +3,13 @@
     position: relative;
     margin: 20px;
     padding: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
     border-bottom: 1px solid lightgray;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+ 
+   
 }
 
 .searchReaults:hover{
@@ -15,21 +19,23 @@
 
 .searchReaults > img {
     width: 350px;
-    height: 200px;
+    height: 220px;
     border-radius: 10px;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 .searchResult-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 20px;
+    justify-content: space-around;
+    padding-left: 30px;
 }
 
 .searchResult-heart {
     position: absolute;
     top: 20px;
     right: 40px;
+ 
 }
 .searchInfo_top {
    width: 40vw;
@@ -44,15 +50,27 @@
     margin-top: 10px;
     font-size: 13px;
     color: grey;
+    width: 20vw;
+    line-height: 1.2em;
 }
 .searchInfo_bottom {
     display: flex;
+    margin-top: -20px;
     justify-content: space-between;
 }
+.searchResult_stars {
+  align-content: center;
+ 
+} 
+.searchResult_star{
+    color: red; 
+    font-weight: 100;
+    transform: scale(1);
+}
+.searchResult_star p {
 
-.searchResult_star {
-    color: red;
     align-items: center;
+    font-weight: 400;
 }
 
 .searchResults__price > p {
@@ -64,4 +82,87 @@
     bottom: 20px;
     right: 30px;
 }
+
+
+
+@media (max-width: 600px) {
+
+    .searchReaults {
+        margin: 10px;
+        padding: 2px;
+    }
+
+    .searchReaults > img {
+        width: 250px;
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .searchResult-info {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 10px;
+    }
+    
+    .searchResult-heart {
+        position: absolute;
+        top: 2px;
+        right: 0px;
+        font-size: 10px;
+        transform: scale(0.6);
+    }
+    .searchResult-heart .MuiSvgIcon-root{
+       height: 0.5em;
+       width: 0.5em;
+       font-size: 1rem;
+    
+    }
+    .searchInfo_top {
+       width: 40vw;
+    }
+    
+    .searchInfo_top > h3 {
+        font-weight: 500;
+        margin-top: 1px;
+        font-size: 15px;
+    }
+    
+    .searchInfo_top > p {
+        margin-top: 5px;
+        font-size: 11px;
+        color: grey;
+        width: 40vw;
+       
+    }
+    .searchInfo_bottom {
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    
+    .searchResult_star {
+        color: red;
+        align-items: left;
+        font-size: 5px;
+        transform: scale(0.6);
+    }
+    
+    .searchResults__price > p {
+        text-align: right;
+       
+        }
+    .searchResult_stars   h6 {
+       text-align: center;
+      
+    }
+    
+    .searchResults__price {
+        position: absolute;
+        font-size: 10px;
+        bottom: 5px;
+        right: 10px;
+    }
+  }
 

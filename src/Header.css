@@ -2,12 +2,12 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     position: sticky;
     top: 0;
     z-index: 100;
     background-color: antiquewhite;
-    
+  
 }
 
 .header-icon {
@@ -31,7 +31,7 @@
    border: none;
    outline-width: 0;
    padding: 10px;
-  
+   background-color: antiquewhite;
 }
 .header-right{
     display: flex;
@@ -39,3 +39,41 @@
     justify-content: space-between;
     margin-right: 80px;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .header-center {
+        display: flex;
+        align-items: center;
+        flex: 0.3;
+        min-width: fit-content;
+     
+     padding: 2px;
+     padding-bottom: 5px;
+     margin-bottom: 10px;
+        height: 20px;
+    }
+
+    .header-center > input{
+       border: none;
+        outline-width: 0;
+        padding: 2px 0px 2px 0px;
+       
+     }
+
+     .header-right {
+         display: flex;
+         flex-grow: inherit;
+         justify-content: space-between;
+         margin-right: 0;
+         padding: 5px;
+         align-content: space-between;
+         width: 60%;
+        
+     }
+  }

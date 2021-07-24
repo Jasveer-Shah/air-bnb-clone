@@ -1,13 +1,14 @@
 .banner {
     background: url('https://a0.muscache.com/im/pictures/258b129d-d1cd-48b5-86d4-86206c13ebf7.jpg?im_w=2560')center center;
     position: relative;
-    height: 60vh;
+    height: 80vh;
+    width: 100%;
 }
 .banner-info {
   
     background-color: black;
     color: white;
-    padding: 10% 50px 40px 50px;
+    padding: 20vh 50px 40px 50px;
     width: 25%;
 }
 
@@ -18,10 +19,17 @@
     margin-top: 20px;
     font-weight: 600;
 }
+.banner-info > h1 {
+    font-size: 2em;
+}
+
 .banner-info  > h5 {
     margin-top: 5px;
     letter-spacing: 1px;
 }
+
+
+
 
 .banner-search {
     display: flex;
@@ -32,4 +40,38 @@
     font-weight:900;
     text-transform: inherit !important;
     color: #ff7779 !important;
+}
+
+
+
+
+@media only screen and (max-width: 985px) {
+
+    .banner {
+        background: url('https://a0.muscache.com/im/pictures/258b129d-d1cd-48b5-86d4-86206c13ebf7.jpg?im_w=2560')center/cover  no-repeat;
+        position: relative;
+        height:50vh;
+        width: 100%;
+    }
+
+    .banner-info {
+  
+        background-color: black;
+        color: white;
+        padding: 10vh 50px 40px 50px;
+        width: 25%;
+    }
+    .banner-info > h1 {
+        font-size: 1em;
+    }
+    .banner-info  > h5 {
+        margin-top: 5px;
+        font-size: 0.5em;
+        color: grey;
+    }
+
+    .banner-info > .MuiButton-outlined {
+       font-weight: 100;
+       padding: 2px 3px;
+  }
 }
