@@ -3,7 +3,6 @@ import './Search.css'
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
-import 'react-date-range/dist/styles.css'; // main style file
 import PeopleIcon from '@material-ui/icons/People';
 import { Button } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
@@ -39,9 +38,9 @@ function Search() {
             <input                            // 3rd item
             min={0}
             defaultValue={2}
-            type='number'/>
+            type='number' />
                                                 {/* 4rth item */}
-            <Button  onClick={() => history.push('/search')}>Search Airbnb</Button>      
+            <Button  onClick={() => history.push('/search')}>Search My Trip</Button>      
         </div>
     )
 }

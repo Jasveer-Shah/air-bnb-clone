@@ -2,7 +2,7 @@
     position: absolute;
     top: 35px;
     left: 25%;
-    width: 100vw;
+    width: 100%;
     z-index: 100;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .search > input {
-    width: 540px;
+    width: 555px;
     padding-left: 20px;
     position: absolute;
     left: 0;
@@ -40,7 +40,7 @@
    text-transform: inherit !important;
    background-color: #ff7779;
    color: white;
-   width: 579px;
+    width:579px;
 
 }
 
