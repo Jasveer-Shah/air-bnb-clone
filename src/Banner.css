@@ -28,6 +28,14 @@
     letter-spacing: 1px;
 }
 
+@media only screen and (max-width: 600px){
+    .banner {
+        background: url('https://a0.muscache.com/im/pictures/258b129d-d1cd-48b5-86d4-86206c13ebf7.jpg?im_w=2560')center/contain  no-repeat;
+        position: relative;
+        height:50vh;
+        width: 100%;
+    }
+}
 
 
 

@@ -18,6 +18,12 @@
     width: 100%;
 }
 
+.card > img:hover {
+    transform:scale(0.97);
+    border-radius: 4%;
+}
+
+
 .card-info {
     margin-top: -9px;
     border-radius: 10px;

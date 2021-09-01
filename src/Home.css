@@ -4,13 +4,19 @@
     width: 100%;
 }
 .home-section {
-    display: flex;
+    /* display: flex;
+
     padding: 30px;
+    justify-content: center; */
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding:30px;
 }
 
 @media only screen and (max-width: 600px) {
     .home-section {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         padding: 10px;
     }
     
